@@ -6,8 +6,9 @@ services:
       - "3000:3000"
     volumes:
       - .:/usr/src/app
+      - /usr/src/app/node_modules
     environment:
-      - PORT=3000
+      - PORT=3008
     depends_on:
       - db
 

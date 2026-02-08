@@ -56,9 +56,11 @@ docker compose up --build
 ---
 
 ### Then open:
+
 `http://localhost:3000`
 
 ### Stop the application
+
 ```bash
 docker compose down
 ```
@@ -84,16 +86,25 @@ recipe-swap/
 ```
 
 ### Database (Sprint 1)
+
 A MySQL container is started via Docker Compose and seeded using:
-- db/init.sql
+`db/init.sql`
 The database is currently used for environment setup and seeding checks.
+
 ---
 
 ### Project Management (Kanban Board)
+
+Kanban board (GitHub Projects):
+`https://github.com/users/abhaykumarmandal/projects/3`
+
 All sprint tasks are tracked using GitHub Projects (Kanban):
 - Backlog / Todo / In Progress / Done
+  
+---
 
 ### Sprint 1 issues include:
+
 - Setup Docker Compose (Node + MySQL)
 - Create Express + Pug scaffold
 - Add README with run instructions
@@ -106,6 +117,7 @@ All sprint tasks are tracked using GitHub Projects (Kanban):
 ---
 
 ### Roadmap to Next Sprints
+
 #### Sprint 2
 - User stories, use case diagram
 - Wireframes + activity diagrams
@@ -119,7 +131,15 @@ All sprint tasks are tracked using GitHub Projects (Kanban):
 - Detail page
 - Tags/categories
 
-
 #### Sprint 4
 - MVP enhancements, such as login, ratings, messaging, and recommendations
 - GitHub Actions CI/CD workflow
+
+---
+
+### Commit + push it
+```bash
+git add README.md
+git commit -m "docs: update README with run steps, structure, database, roadmap"
+git push
+```

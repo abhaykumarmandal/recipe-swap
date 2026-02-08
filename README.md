@@ -63,7 +63,9 @@ docker compose up --build
 docker compose down
 ```
 
-### Project Structure
+## Project Structure
+
+```text
 recipe-swap/
 ├─ src/
 │  └─ app.js
@@ -79,6 +81,7 @@ recipe-swap/
 ├─ docker-compose.yml
 ├─ package.json
 └─ README.md
+```
 
 ### Database (Sprint 1)
 A MySQL container is started via Docker Compose and seeded using:

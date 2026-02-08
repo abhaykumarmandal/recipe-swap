@@ -1,10 +1,10 @@
-# Recipe Swap (Solo) – Sprint 1 (CMP-N204-0)
+# Recipe Swap – Sprint 1 (CMP-N204-0)
 
-**Author:** Aashish (Solo)  
+**Author:** Aashish Gupta
 **Module:** Software Engineering (CMP-N204-0)  
 **Theme (2026):** Sharing, exchange and building community
 
-Recipe Swap is a community web application where users share recipes and exchange cooking ideas for mutual benefit (non-financial exchange). Users can browse recipes, view details, and (in later sprints) add ratings, messaging, and recommendations.
+Recipe Swap is an interactive web platform that encourages users to share their recipes and exchange prescriptive instructions and culinary ideas with each other (non-commercial interchange). Users can look at the recipes, check the details, and eventually, in the succeeding sprints, add ratings, messaging, and recommendations features.
 
 ---
 
@@ -51,3 +51,72 @@ From the project root:
 
 ```bash
 docker compose up --build
+```
+
+---
+
+### Then open:
+`http://localhost:3000`
+
+### Stop the application
+```bash
+docker compose down
+```
+
+### Project Structure
+recipe-swap/
+├─ src/
+│  └─ app.js
+├─ views/
+│  ├─ layout.pug
+│  └─ index.pug
+├─ public/
+│  └─ css/
+│     └─ style.css
+├─ db/
+│  └─ init.sql
+├─ Dockerfile
+├─ docker-compose.yml
+├─ package.json
+└─ README.md
+
+### Database (Sprint 1)
+A MySQL container is started via Docker Compose and seeded using:
+- db/init.sql
+The database is currently used for environment setup and seeding checks.
+---
+
+### Project Management (Kanban Board)
+All sprint tasks are tracked using GitHub Projects (Kanban):
+- Backlog / Todo / In Progress / Done
+
+### Sprint 1 issues include:
+- Setup Docker Compose (Node + MySQL)
+- Create Express + Pug scaffold
+- Add README with run instructions
+- Write Code of Conduct
+- Create 2 Personas
+- Identify ethical issues
+- Create meeting records template
+- Verify Docker Compose up works
+  
+---
+
+### Roadmap to Next Sprints
+#### Sprint 2
+- User stories, use case diagram
+- Wireframes + activity diagrams
+- Sprint 3 specification
+
+#### Sprint 3
+- Database-driven pages (MySQL + Express + Pug):
+- Users list page
+- User profile page
+- Listing page
+- Detail page
+- Tags/categories
+
+
+#### Sprint 4
+- MVP enhancements, such as login, ratings, messaging, and recommendations
+- GitHub Actions CI/CD workflow
